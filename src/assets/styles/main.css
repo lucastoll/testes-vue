@@ -1,15 +1,15 @@
 @import './base.css';
 
 #app {
-  background: #181818;
+    background: #181818;
 }
 
 @font-face {
-  font-family: 'HyliaSerif';
-  src: url('../fonts/HyliaSerifBeta-Regular.otf') format('opentype');
+    font-family: 'HyliaSerif';
+    src: url('../fonts/HyliaSerifBeta-Regular.otf') format('opentype');
 }
-*{
-  font-family: 'HyliaSerif';
-  color: white;
-  letter-spacing: 1px;
+* {
+    font-family: 'HyliaSerif';
+    color: white;
+    letter-spacing: 1px;
 }
