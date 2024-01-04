@@ -1,8 +1,11 @@
 <script setup lang="ts">
-import HeaderMultiWord from './components/HeaderMultiWord.vue'
+import HeaderOptionsAPI from './components/HeaderOptionsAPI.vue';
+import StatePropsCompositionAPI from './components/StatePropsCompositionAPI.vue'
 </script>
 
 <template>
-    <HeaderMultiWord></HeaderMultiWord>
-    <main></main>
+    <HeaderOptionsAPI></HeaderOptionsAPI>
+    <main>
+      <StatePropsCompositionAPI></StatePropsCompositionAPI>
+    </main>
 </template>

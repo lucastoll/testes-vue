@@ -23,7 +23,7 @@ export default {
 <template>
     <header :style="{ maxHeight: mobileHeaderActive ? '100%' : '80px' }">
         <div class="imageWrapper">
-            <img class="logo" src="../assets/images/logo.svg" alt="VueJS" />
+            <img class="logo" src="../assets/images/zeldalogo.png" alt="VueJS" />
             <img
                 class="hamburguer"
                 @click="toggleHeader"
