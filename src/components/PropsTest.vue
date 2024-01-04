@@ -1,12 +1,12 @@
 <script setup lang="ts">
-    const props = defineProps({
-        count: Number,
-    })
-    const emits = defineEmits(['incremented']);
+const props = defineProps({
+    count: Number
+})
+const emits = defineEmits(['incremented'])
 
-    function increment(){
-        emits('incremented', props.count)
-    }
+function increment() {
+    emits('incremented', props.count)
+}
 </script>
 
 <template>
@@ -15,11 +15,11 @@
 </template>
 
 <style scoped>
-    button{
-        width: 200px;
-        height: 40px;
-        background: #1E68A7;
-        border: 2px solid white;
-        margin: 32px 0;
-    }
+button {
+    width: 200px;
+    height: 40px;
+    background: #1e68a7;
+    border: 2px solid white;
+    margin: 32px 0;
+}
 </style>
