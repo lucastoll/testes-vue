@@ -13,3 +13,12 @@
     color: white;
     letter-spacing: 1px;
 }
+
+section{
+  width: 100%;
+  padding: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
