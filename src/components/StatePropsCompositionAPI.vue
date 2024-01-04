@@ -1,18 +1,18 @@
 <script setup lang="ts">
 import { ref } from 'vue';
+import PropsTest from './PropsTest.vue';
     const count = ref(0);
 
-    function increment() {
+    function incremented() {
         count.value++
     }
 </script>
 
 <template>
     <section>
-        <h2>Variáveis de estado</h2>
+        <h2>Variáveis de estado, props e emit</h2>
         <img :style="{ transform: `rotate(${count * 90}deg)` }" class="masterSword" src="../assets/images/masterSword.png" alt="Master sword">
-        <button @click="increment">Girar master sword</button>
-        <p>A master sword ja foi girada: {{ count }} vezes</p>
+        <PropsTest :count="count" @incremented="incremented"></PropsTest>
     </section>
 </template>
 
@@ -33,13 +33,5 @@ import { ref } from 'vue';
         margin-top: 32px;
         height: 200px;
         transition: 1s transform ease-in-out;
-    }
-
-    button{
-        width: 200px;
-        height: 40px;
-        background: #1E68A7;
-        border: 2px solid white;
-        margin: 32px 0;
     }
 </style>
